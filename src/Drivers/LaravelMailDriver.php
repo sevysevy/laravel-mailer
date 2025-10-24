@@ -28,17 +28,6 @@ class LaravelMailDriver implements EmailDriverInterface
                 }
             });
 
-            // ✅ If no exception, check for failures
-            $failures = Mail::failures();
-
-            if (count($failures) > 0) {
-                Log::error('❌ Email sending failed via LaravelMailDriver', [
-                    'to' => $message->to,
-                    'failures' => $failures,
-                ]);
-                return false;
-            }
-
             Log::info('✅ Email sent successfully via LaravelMailDriver', [
                 'to' => $message->to,
                 'subject' => $message->subject,
@@ -46,14 +35,16 @@ class LaravelMailDriver implements EmailDriverInterface
 
             return true;
         } catch (Throwable $e) {
-            Log::error('❌ Exception during email send', [
-                'to' => $message->to,
+            // Symfony mailer or connection errors will be caught here
+            Log::error('❌ Email send failed via LaravelMailDriver', [
+                'to'    => $message->to,
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),
             ]);
 
-            // Optionally rethrow for upstream handling
+            // Optionally rethrow to make higher layers aware
             throw $e;
+
         }
     }
 }
