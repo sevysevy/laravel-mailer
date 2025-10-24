@@ -1,6 +1,6 @@
 <?php 
 
-namespace Sevysevy\Mailer\Mailer\Drivers;
+namespace Sevysevy\Mailer\Drivers;
 
 use Sevysevy\Mailer\Contracts\EmailDriverInterface;
 use Sevysevy\Mailer\DTO\SendEmailDTO;
