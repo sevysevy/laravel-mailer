@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Mailer\DTO;
+namespace Sevysevy\Mailer\DTO;
 
 class SendEmailDTO
 {

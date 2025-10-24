@@ -1,17 +1,10 @@
 {
-  "name": "fakode/laravel-mailer",
+  "name": "sevysevy/laravel-mailer",
   "description": "Reusable email sender service for Laravel apps",
   "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Yves Ngah",
-      "email": "youremail@example.com"
-    }
-  ],
   "autoload": {
     "psr-4": {
-      "Fakode\\Mailer\\": "src/"
+      "Sevysevy\\Mailer\\": "src/"
     }
   },
   "require": {
@@ -21,10 +14,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Fakode\\Mailer\\MailerServiceProvider"
+        "Sevysevy\\Mailer\\MailerServiceProvider"
       ],
       "aliases": {
-        "Mailer": "Fakode\\Mailer\\Facades\\Mailer"
+        "Mailer": "Sevysevy\\Mailer\\Facades\\Mailer"
       }
     }
   }

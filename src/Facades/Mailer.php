@@ -1,6 +1,6 @@
 <?php
 
-namespace Fakode\Mailer\Facades;
+namespace Sevysevy\Mailer\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -8,6 +8,6 @@ class Mailer extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Fakode\Mailer\EmailService::class;
+        return \Sevysevy\Mailer\EmailService::class;
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Mailer;
+namespace Sevysevy\Mailer;
 
-use App\Services\Mailer\DTO\SendEmailDTO;
+use Sevysevy\Mailer\DTO\SendEmailDTO;
 use Illuminate\Support\Facades\DB;
 
 class EmailLogRepository

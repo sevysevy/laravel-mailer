@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakode\Mailer;
+namespace Sevysevy\Mailer;
 
 use Illuminate\Support\ServiceProvider;
-use Fakode\Mailer\Drivers\LaravelMailDriver;
+use Sevysevy\Mailer\Drivers\LaravelMailDriver;
 
 class MailerServiceProvider extends ServiceProvider
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Services\Mailer;
+namespace Sevysevy\Mailer;
 
-use App\Services\Mailer\Contracts\EmailDriverInterface;
-use App\Services\Mailer\DTO\SendEmailDTO;
+use Sevysevy\Mailer\Contracts\EmailDriverInterface;
+use Sevysevy\Mailer\DTO\SendEmailDTO;
 
 class EmailService
 {

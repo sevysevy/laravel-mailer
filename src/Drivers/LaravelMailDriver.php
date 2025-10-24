@@ -1,9 +1,9 @@
 <?php 
 
-namespace App\Services\Mailer\Drivers;
+namespace Sevysevy\Mailer\Mailer\Drivers;
 
-use App\Services\Mailer\Contracts\EmailDriverInterface;
-use App\Services\Mailer\DTO\SendEmailDTO;
+use Sevysevy\Mailer\Contracts\EmailDriverInterface;
+use Sevysevy\Mailer\DTO\SendEmailDTO;
 use Illuminate\Support\Facades\Mail;
 
 class LaravelMailDriver implements EmailDriverInterface
